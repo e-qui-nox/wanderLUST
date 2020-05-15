@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_single_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_place"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            android:background="#000000"/>
+
+        <ImageButton
+            android:id="@+id/share"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/share" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip no: "
+            android:textColor="@color/saffron"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:text="Id Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewID"
+            android:textColor="@color/saffron"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Name Show Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPhoneNumber"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:text="Phone Number Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:textColor="#343434"
+        android:textSize="12dip"
+        android:textStyle="italic"
+        android:layout_marginTop="1dip"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Update Trip"
+        android:textColor="#ffffff"
+        android:id="@+id/buttonEdit" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Cancel Trip"
+        android:textColor="#ffffff"
+        android:id="@+id/buttonDelete" />
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">wanderLUST</string>
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="title_activity_nearby">Map</string>
+    <string name="title_activity_city_map">Map</string>
+
+    <string name="title_activity_booking">BookingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

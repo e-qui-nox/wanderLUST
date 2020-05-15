@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/trip_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp">
+
+    <com.github.vipulasri.timelineview.TimelineView
+        android:id="@+id/timeline_view"
+        app:marker="@drawable/marker"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        app:line="@color/colorPrimary"
+        app:lineSize="2dp"
+        app:markerInCenter="false"
+        app:markerSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        card_view:contentPadding="100dp"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <LinearLayout android:id="@+id/thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/image_bg"
+                android:layout_marginRight="5dip">
+
+                <ImageView
+                    android:id="@+id/list_image"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewPHONE_NUMBER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:text="Chennai"
+                android:textSize="15dip"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewNAME"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPHONE_NUMBER"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="12/02/2021" />
+
+            <!-- Rightend Arrow -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
